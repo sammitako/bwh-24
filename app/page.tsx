@@ -5,7 +5,7 @@ export default function Home() {
 		<main className="flex min-h-screen flex-col items-center justify-between p-24">
 			<div className="text-red-500">Landing Page</div>
 			<div>
-				<Link href="">Logs History</Link>
+				<Link href="/logs">Logs History</Link>
 			</div>
 		</main>
 	);
