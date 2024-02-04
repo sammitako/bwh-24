@@ -2,22 +2,17 @@ import Image from "next/image";
 import googleLogo from "@/public/google.png";
 import githubLogo from "@/public/github.png";
 import {
+  CredentialsSignInButton,
   GithubSignInButton,
   GoogleSignInButton,
+  RegisterButton,
 } from "../components/authButtons";
-// import { getServerSession } from "next-auth";
-// import { authConfig } from "@/lib/auth";
-// import { redirect } from "next/navigation";
-// import { getCsrfToken } from "next-auth/react";
 import styles from "./styles/login.css";
-import { CredentialsForm } from "../components/credentialsForm";
+import Link from 'next/link';
+
 
 export default async function SignInPage() {
-  // const session = await getServerSession(authConfig);
 
-  // console.log("Session: ", session);
-
-  // if (session) return redirect("/timeline");
 
   return (
    
@@ -31,9 +26,12 @@ export default async function SignInPage() {
       <GoogleSignInButton />
       <GithubSignInButton />
       <h1 className="text-center text-gray-600 p-4">
-        OR CONTINUE WITH
+        OR
       </h1>
-      <CredentialsForm/>
+      <CredentialsSignInButton/>
+      <RegisterButton/>
+      
+
       </div>
  </div>
     </main>

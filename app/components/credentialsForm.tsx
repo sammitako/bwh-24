@@ -61,7 +61,7 @@ export function CredentialsForm(props: CredentialsFormProps) {
         type="submit"
         className="w-full h-12 px-6 mt-4 text-lg text-white transition-colors duration-150 bg-black rounded-lg focus:shadow-outline hover:bg-gray-600"
       >
-        Log in
+        Create account
       </button>
     </form>
   );
