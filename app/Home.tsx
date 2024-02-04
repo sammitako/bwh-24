@@ -6,7 +6,7 @@ export default function Home(){
       
 
       <main className={styles.main}>
-        <h1 className={styles.title} style={{ color: "white" }}>SafeHaven</h1>
+        <h1 className={styles.title} style={{ color: "pink" }}>SafeHaven</h1>
 
         <p className={styles.description} style={{color:"white"}}>
           Empower your voice, break the silence. Our platform offers a secure space to document <br></br> experiences, share details, and access assistance in times of need. 
