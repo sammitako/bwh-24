@@ -9,7 +9,6 @@ import {
 // import { authConfig } from "@/lib/auth";
 // import { redirect } from "next/navigation";
 // import { getCsrfToken } from "next-auth/react";
-import { Button } from "@/components/ui/button";
 import styles from "./styles/login.css";
 import { CredentialsForm } from "../components/credentialsForm";
 
