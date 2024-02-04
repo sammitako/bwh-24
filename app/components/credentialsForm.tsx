@@ -12,7 +12,11 @@ export function CredentialsForm(props: CredentialsFormProps) {
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (e) => {
+  const submit = () => {
+    router.push("/");
+  };
+
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
 
@@ -32,9 +36,9 @@ export function CredentialsForm(props: CredentialsFormProps) {
   };
 
   return (
-    <form
+    <div
       className="w-full mt-3 text-xl text-black font-semibold flex flex-col"
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
     >
       {error && (
         <span className="p-4 mb-2 text-lg font-semibold text-white bg-red-500 rounded-md">
@@ -58,11 +62,12 @@ export function CredentialsForm(props: CredentialsFormProps) {
       />
 
       <button
+        onClick={submit}
         type="submit"
         className="w-full h-12 px-6 mt-4 text-lg text-white transition-colors duration-150 bg-black rounded-lg focus:shadow-outline hover:bg-gray-600"
       >
         Create account
       </button>
-    </form>
+    </div>
   );
 }
