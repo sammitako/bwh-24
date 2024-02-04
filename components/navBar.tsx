@@ -8,7 +8,7 @@ const NavBar = () => {
 				<Link href="/" className="py-2 pr-6 text-rose-300 font-bold text-2xl ">
 					SafeHaven
 				</Link>
-				<Link href="/logs" className="border border-transparent rounded-xl  py-2 px-6 hover:border-white">
+				<Link href="/entries" className="border border-transparent rounded-xl  py-2 px-6 hover:border-white">
 					Entries
 				</Link>
 				<Link href="" className="border border-transparent rounded-xl  py-2 px-6 hover:border-white">
