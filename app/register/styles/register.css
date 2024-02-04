@@ -1,0 +1,15 @@
+
+  .container {
+    padding: 0 2rem;
+    border: 2cm;
+    background-color: white;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  
