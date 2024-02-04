@@ -33,7 +33,7 @@ export default function Home() {
               htmlFor="date"
               className="scroll-m-20 py-1.5 text-lg text-[#011638] font-semibold tracking-tight"
             >
-              02.04.2024
+              02.05.2024
             </Label>
             <Separator className="my-1 bg-[#011638]" />
             <Label
